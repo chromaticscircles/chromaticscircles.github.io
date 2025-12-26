@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chromatic Circles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Inter font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="style-final.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="brand">CHROMATIC CIRCLES</div>
   <ul>
@@ -28,23 +31,28 @@
 <!-- HOME -->
 <section id="home" class="hero">
   <h1>CHROMATIC CIRCLES</h1>
-  <p>Mandala • Dot Mandala • Lippan Art<br>Art as Meditation</p>
+  <p>Mandala • Dot Mandala • Pattern Art<br>Art in Perfect Balance</p>
+
+  <div class="hero-buttons">
+    <a href="#photos" class="btn primary">View Gallery</a>
+    <a href="#contact" class="btn outline">Contact</a>
+  </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
   <h2>About the Artist</h2>
-  <p>
-    Chromatic Circles is a mindful art practice rooted in patience, symmetry,
-    and quiet focus. Each artwork is created slowly, allowing the process
-    itself to become a form of meditation. What began as curiosity gradually
-    evolved into a dedicated exploration of mandala, dot mandala, and lippan art.
+  <p class="about-text">
+    Chromatic Circles is a mindful exploration of symmetry, colour, and rhythm.
+    Each artwork is created slowly, with patience and intention, allowing the
+    process itself to become meditative. What began as curiosity gradually
+    evolved into a focused artistic journey rooted in balance and precision.
   </p>
 </section>
 
-<!-- PHOTOS / GALLERY -->
-<section id="photos" class="section">
-  <h2>Photos</h2>
+<!-- PHOTOS -->
+<section id="photos" class="section soft">
+  <h2>Gallery</h2>
 
   <div class="gallery-grid">
     <div class="card"><img src="Mandala1.jpg" alt="Mandala Art 1"></div>
@@ -60,58 +68,64 @@
 </section>
 
 <!-- PURCHASE -->
-<section id="purchase" class="section soft">
+<section id="purchase" class="section">
   <h2>Purchase</h2>
   <p>
-    Selected artworks are available for purchase.  
-    For pricing, custom commissions, or exhibition pieces, please reach out
-    via Instagram or email.
+    Selected artworks are available for purchase and commissions.
+    Please reach out for pricing, custom sizes, or exhibition pieces.
   </p>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section soft">
   <h2>Contact</h2>
 
-  <div class="contact-box">
-    <p><strong>Instagram:</strong> @chromaticcircles</p>
-    <p><strong>Email:</strong> chromaticcircles@gmail.com</p>
-    <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+  <div class="contact-icons">
+    <a href="https://instagram.com/chromaticcircles" target="_blank">
+      <i class="fab fa-instagram"></i>
+      <span>@chromaticcircles</span>
+    </a>
+
+    <a href="mailto:chromaticcircles@gmail.com">
+      <i class="fas fa-envelope"></i>
+      <span>chromaticcircles@gmail.com</span>
+    </a>
+
+    <a href="tel:+919999999999">
+      <i class="fas fa-phone"></i>
+      <span>+91 99999 99999</span>
+    </a>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   © 2025 Chromatic Circles
 </footer>
 
-<!-- FULLSCREEN LIGHTBOX -->
+<!-- LIGHTBOX -->
 <div id="lightbox" onclick="closeLightbox()">
   <span class="close">&times;</span>
   <img id="lightbox-img">
 </div>
 
-<!-- SCRIPT -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".card img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
 
-    const images = document.querySelectorAll(".card img");
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-
-    images.forEach(img => {
-      img.addEventListener("click", function (e) {
-        e.stopPropagation();
-        lightbox.style.display = "flex";
-        lightboxImg.src = this.src;
-      });
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
     });
-
-    window.closeLightbox = function () {
-      lightbox.style.display = "none";
-      lightboxImg.src = "";
-    };
   });
+
+  window.closeLightbox = function () {
+    lightbox.style.display = "none";
+    lightboxImg.src = "";
+  };
+});
 </script>
 
 </body>
