@@ -34,7 +34,6 @@ body {
   color: #fff;
   margin-top: 16px;
   font-size: 16px;
-  letter-spacing: 1.2px;
 }
 
 /* SECTIONS */
@@ -58,19 +57,22 @@ section {
   gap: 30px;
 }
 
-/* IMAGE CARD (THIS FIXES EVERYTHING) */
+/* CARD — LOCKED SIZE */
 .card {
   width: 100%;
-  aspect-ratio: 1 / 1;       /* FIXED SQUARE */
+  height: 320px;                 /* FIXED HEIGHT */
   overflow: hidden;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: #eee;
 }
 
+/* IMAGE — CANNOT ESCAPE */
 .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
   display: block;
 }
 
@@ -93,18 +95,4 @@ footer {
   padding: 30px;
   background: #1c1c1c;
   color: #eee;
-  font-size: 14px;
 }
-/* FORCE ALL GALLERY IMAGES TO FIT INSIDE THE BOX */
-.gallery-grid .card {
-  height: 100%;
-}
-
-.gallery-grid .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* fills box without stretching */
-  object-position: center;
-}
-
-
