@@ -2,63 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chromatic Circles</title>
 
   <!-- Inter font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style-final.css?v=2">
-
-
+  <link rel="stylesheet" href="style-final.css">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <h1>CHROMATIC CIRCLES</h1>
-    <p class="subtitle">
-      Mandala • Dot Mandala • Pattern Art<br>
-      Art in Perfect Balance
-    </p>
-  </header>
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="brand">CHROMATIC CIRCLES</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#purchase">Purchase</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <p>
-      Chromatic Circles is a space for mindful pattern art inspired by symmetry,
-      colour, and rhythm. Each artwork is created slowly, with intention and precision.
-    </p>
-  </section>
+<!-- HOME -->
+<section id="home" class="hero">
+  <h1>CHROMATIC CIRCLES</h1>
+  <p>Mandala • Dot Mandala • Lippan Art<br>Art as Meditation</p>
+</section>
 
-  <!-- GALLERY -->
-  <section class="gallery">
-    <h2>Gallery</h2>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About the Artist</h2>
+  <p>
+    Chromatic Circles is a mindful art practice rooted in patience, symmetry,
+    and quiet focus. Each artwork is created slowly, allowing the process
+    itself to become a form of meditation. What began as curiosity gradually
+    evolved into a dedicated exploration of mandala, dot mandala, and lippan art.
+  </p>
+</section>
 
-    <div class="gallery-grid">
-      <div class="card"><img src="Mandala1.jpg" alt="Mandala Art 1"></div>
-      <div class="card"><img src="Mandala2.jpg" alt="Mandala Art 2"></div>
-      <div class="card"><img src="Mandala3.jpg" alt="Mandala Art 3"></div>
-      <div class="card"><img src="Mandala4.jpg" alt="Mandala Art 4"></div>
-      <div class="card"><img src="Mandala5.jpg" alt="Mandala Art 5"></div>
-      <div class="card"><img src="Mandala6.jpg" alt="Mandala Art 6"></div>
-      <div class="card"><img src="Mandala7.jpg" alt="Mandala Art 7"></div>
-      <div class="card"><img src="Mandala8.jpg" alt="Mandala Art 8"></div>
-      <div class="card"><img src="Mandala9.jpg" alt="Mandala Art 9"></div>
+<!-- PHOTOS / GALLERY -->
+<section id="photos" class="section">
+  <h2>Photos</h2>
 
+  <div class="gallery-grid">
+    <div class="card"><img src="Mandala1.jpg" alt="Mandala Art 1"></div>
+    <div class="card"><img src="Mandala2.jpg" alt="Mandala Art 2"></div>
+    <div class="card"><img src="Mandala3.jpg" alt="Mandala Art 3"></div>
+    <div class="card"><img src="Mandala4.jpg" alt="Mandala Art 4"></div>
+    <div class="card"><img src="Mandala5.jpg" alt="Mandala Art 5"></div>
+    <div class="card"><img src="Mandala6.jpg" alt="Mandala Art 6"></div>
+    <div class="card"><img src="Mandala7.jpg" alt="Mandala Art 7"></div>
+    <div class="card"><img src="Mandala8.jpg" alt="Mandala Art 8"></div>
+    <div class="card"><img src="Mandala9.jpg" alt="Mandala Art 9"></div>
+  </div>
+</section>
 
-    </div>
-  </section>
+<!-- PURCHASE -->
+<section id="purchase" class="section soft">
+  <h2>Purchase</h2>
+  <p>
+    Selected artworks are available for purchase.  
+    For pricing, custom commissions, or exhibition pieces, please reach out
+    via Instagram or email.
+  </p>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2025 Chromatic Circles
-  </footer>
-<!-- FULLSCREEN VIEWER -->
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact</h2>
+
+  <div class="contact-box">
+    <p><strong>Instagram:</strong> @chromaticcircles</p>
+    <p><strong>Email:</strong> chromaticcircles@gmail.com</p>
+    <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Chromatic Circles
+</footer>
+
+<!-- FULLSCREEN LIGHTBOX -->
 <div id="lightbox" onclick="closeLightbox()">
   <span class="close">&times;</span>
   <img id="lightbox-img">
 </div>
+
+<!-- SCRIPT -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
 
@@ -78,17 +111,8 @@
       lightbox.style.display = "none";
       lightboxImg.src = "";
     };
-
   });
 </script>
 
-
 </body>
 </html>
-
-
-
-
-
-
-
