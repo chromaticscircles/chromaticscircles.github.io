@@ -59,9 +59,13 @@ section p {
 
 .gallery img {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: 14px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  display: block;
+  background: none;
+}
+
 }
 
 }
@@ -74,4 +78,5 @@ footer {
   padding: 20px;
   font-size: 14px;
 }
+
 
