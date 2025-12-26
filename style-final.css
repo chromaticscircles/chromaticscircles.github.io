@@ -141,6 +141,10 @@ footer {
   color: #fff;
   cursor: pointer;
 }
+.card img {
+  cursor: zoom-in;
+}
+
 
 
 
