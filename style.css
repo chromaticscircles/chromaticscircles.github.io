@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #fffaf5;
+  color: #2b2b2b;
+}
+
+/* HEADER */
+.site-header {
+  min-height: 60vh;
+  background: linear-gradient(135deg, #b31217, #ff512f, #f09819);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.site-header h1 {
+  color: white;
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.site-header .subtitle {
+  color: white;
+  margin-top: 16px;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 25px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* GALLERY */
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+/* FOOTER */
+footer {
+  background: #1c1c1c;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
