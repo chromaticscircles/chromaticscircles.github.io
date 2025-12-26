@@ -201,3 +201,13 @@ footer {
     display: none;
   }
 }
+/* IMAGE CAPTIONS */
+.caption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  letter-spacing: 0.5px;
+
+}
+
