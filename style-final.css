@@ -71,9 +71,12 @@ section {
 .card img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
+  object-fit: contain !important;   /* FIT, NOT CROP */
+  object-position: center;
+  background-color: #f2f2f2;        /* soft background for portrait images */
   display: block;
+}
+
 }
 
 /* RESPONSIVE */
@@ -96,3 +99,4 @@ footer {
   background: #1c1c1c;
   color: #eee;
 }
+
