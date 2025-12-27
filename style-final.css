@@ -368,6 +368,14 @@ html, body {
     white-space: nowrap !important;
   }
 }
+/* Art size text under captions */
+.caption .size {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #666;
+}
+
 
 
 
