@@ -272,5 +272,42 @@ footer {
   color: #555;
   line-height: 1.5;
 }
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Reviews */
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.review-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.review-card strong {
+  display: block;
+  margin-top: 12px;
+}
+
 
 
