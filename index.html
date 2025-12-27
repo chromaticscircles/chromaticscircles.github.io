@@ -195,9 +195,39 @@
 <footer>
   © 2025 Chromatic Circles
 </footer>
+<!-- SIGNATURE DIVIDER -->
+<div class="signature-divider"></div>
+
+<!-- TRUST SIGNAL -->
+<section class="section trust">
+  <p class="trust-text">
+    Created with patience, precision, and intention.  
+    Custom commissions and curated exhibitions available.
+  </p>
+</section>
+
+<script>
+/* Scroll reveal animation */
+document.addEventListener("DOMContentLoaded", () => {
+  const revealElements = document.querySelectorAll(
+    ".section, .card, .review-card"
+  );
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal");
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealElements.forEach(el => observer.observe(el));
+});
+</script>
 
 </body>
 </html>
+
 
 
 
