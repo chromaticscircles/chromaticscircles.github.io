@@ -174,3 +174,24 @@ footer {
     font-size: 38px;
   }
 }
+/* ---------- FIX CUSTOMER REVIEWS ALIGNMENT (KEEP OLD STYLE) ---------- */
+
+#reviews {
+  text-align: center;
+}
+
+#reviews .reviews,
+#reviews .reviews-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+#reviews .review-card {
+  width: 280px;
+  text-align: center;
+}
+
