@@ -320,6 +320,55 @@ html, body {
     white-space: nowrap;
   }
 }
+/* ===== FORCE MOBILE NAVBAR TO FIT SCREEN ===== */
+
+@media (max-width: 768px) {
+
+  /* stop horizontal overflow completely */
+  html, body {
+    overflow-x: hidden !important;
+  }
+
+  /* navbar container */
+  .navbar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 10px 12px !important;
+  }
+
+  /* brand title */
+  .navbar .brand {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 15px !important;
+    white-space: nowrap !important;
+    margin-bottom: 6px !important;
+  }
+
+  /* nav list */
+  .navbar ul {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 8px !important;
+  }
+
+  .navbar ul li {
+    list-style: none !important;
+  }
+
+  .navbar ul li a {
+    font-size: 13px !important;
+    padding: 4px 6px !important;
+    white-space: nowrap !important;
+  }
+}
+
 
 
 
