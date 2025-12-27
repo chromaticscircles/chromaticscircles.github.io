@@ -497,6 +497,66 @@ html, body {
 }
 
 /* ================== END REFINEMENT ================== */
+/* ================= HERO GRADIENT SIZE & TEXT ALIGN FIX ================= */
+
+/* Desktop & large screens */
+.hero {
+  min-height: 85vh;              /* controls gradient height */
+  padding: 60px 20px;            /* vertical breathing space */
+  display: flex;
+  align-items: center;           /* vertical centering */
+  justify-content: center;       /* horizontal centering */
+  text-align: center;
+}
+
+/* Ensure text block stays centered */
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Fine-tune heading position */
+.hero h1 {
+  margin-bottom: 12px;
+}
+
+/* Fine-tune subtitle spacing */
+.hero p {
+  margin-top: 0;
+}
+
+/* ---------------- MOBILE OPTIMIZATION ---------------- */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;            /* smaller gradient on phone */
+    padding: 50px 16px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+/* ---------------- SMALL PHONES ---------------- */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 65vh;
+    padding: 44px 14px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+/* ================= END HERO REFINEMENT ================= */
+
 
 
 
