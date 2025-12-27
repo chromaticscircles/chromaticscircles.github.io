@@ -259,6 +259,37 @@ nav, .navbar {
     display: block;
   }
 }
+/* ---------- MOBILE FULL-WIDTH FIX (NO ZOOM) ---------- */
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix hero section on mobile */
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
 
 
 
