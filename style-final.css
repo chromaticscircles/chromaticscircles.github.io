@@ -238,6 +238,28 @@ nav, .navbar {
     text-overflow: ellipsis;
   }
 }
+/* -------- RESTORE & FIX BRAND NAME VISIBILITY -------- */
+
+.brand {
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: unset;
+  max-width: none;
+}
+
+/* Mobile-specific fix */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+
+  .brand {
+    font-size: 15px;        /* slightly smaller so it fits */
+    line-height: 1.2;
+    display: block;
+  }
+}
+
 
 
 
