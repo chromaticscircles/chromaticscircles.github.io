@@ -220,5 +220,24 @@ nav, .navbar {
     font-size: 0.9rem;
   }
 }
+/* -------- FORCE BRAND NAME TO SINGLE LINE ON MOBILE -------- */
+
+.brand {
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+
+  .brand {
+    font-size: 16px;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 
 
