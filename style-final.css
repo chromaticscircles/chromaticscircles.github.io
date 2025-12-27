@@ -194,4 +194,31 @@ footer {
   width: 280px;
   text-align: center;
 }
+/* --- Fix header text wrapping on small screens --- */
+header h1, .navbar-brand, .logo, .site-title {
+  white-space: nowrap;
+  font-size: clamp(1.2rem, 4vw, 1.8rem); /* scales text for mobile */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Optional: adjust navbar layout to prevent wrapping */
+nav, .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* On small screens, keep spacing tight */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 12px;
+  }
+  .navbar a {
+    margin: 0 6px;
+    font-size: 0.9rem;
+  }
+}
+
 
