@@ -594,6 +594,13 @@ html, body {
     max-width: 500px;
   }
 }
+/* ---------- JUSTIFIED TEXT FOR ABOUT THE ARTIST ---------- */
+
+#artist p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 
 
 
