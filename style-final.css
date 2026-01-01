@@ -556,6 +556,45 @@ html, body {
 }
 
 /* ================= END HERO REFINEMENT ================= */
+/* ===============================
+   FIX CUSTOMER REVIEWS LAYOUT
+   =============================== */
+
+.reviews-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 30px !important;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.review-card {
+  width: 420px;
+  max-width: 100%;
+  text-align: left;
+}
+
+/* Keep cards side-by-side on desktop */
+@media (min-width: 769px) {
+  .reviews-wrapper {
+    flex-direction: row !important;
+  }
+}
+
+/* Stack neatly on mobile */
+@media (max-width: 768px) {
+  .reviews-wrapper {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .review-card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
 
 
 
