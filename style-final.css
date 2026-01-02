@@ -600,6 +600,58 @@ html, body {
   text-align: justify;
   text-justify: inter-word;
 }
+/* ===== FIX CUSTOMER REVIEWS + CONTACT LAYOUT ===== */
+
+/* Ensure each section stacks vertically */
+#reviews,
+#contact {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+/* Reviews container: cards in one row */
+#reviews .reviews-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: nowrap; /* keeps them in one line */
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+/* Individual review cards */
+#reviews .review-card {
+  width: 300px;
+  text-align: left;
+}
+
+/* Push contact section BELOW reviews */
+#contact {
+  margin-top: 80px;
+}
+
+/* Contact black section full width */
+#contact .contact-box,
+#contact .contact-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Mobile fix: stack reviews vertically */
+@media (max-width: 900px) {
+  #reviews .reviews-wrapper {
+    flex-wrap: wrap;
+  }
+
+  #reviews .review-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
 
 
 
