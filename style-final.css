@@ -699,6 +699,73 @@ html, body {
     flex-wrap: wrap;
   }
 }
+/* ===== FIX REVIEWS LAYOUT ===== */
+#reviews .reviews-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: nowrap;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.review-card {
+  width: 320px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+/* ===== CONTACT CENTER FIX ===== */
+#contact {
+  text-align: center;
+}
+
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icons p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* ===== DIVIDER ===== */
+.soft-divider {
+  width: 120px;
+  height: 2px;
+  background: #d85a2a;
+  border: none;
+  margin: 60px auto 30px;
+}
+
+/* ===== CLOSING TEXT ===== */
+.closing-text {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+/* ===== FULL-WIDTH BLACK FOOTER ===== */
+.site-footer {
+  width: 100%;
+  background: #1c1c1c;
+  color: #eee;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+  #reviews .reviews-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
 
 
 
