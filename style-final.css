@@ -651,6 +651,55 @@ html, body {
     max-width: 420px;
   }
 }
+/* ===== RESTORE ORIGINAL REVIEWS + BLACK CONTACT LAYOUT ===== */
+
+#reviews {
+  text-align: center;
+}
+
+#reviews .reviews-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.review-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  width: 320px;
+  text-align: left;
+}
+
+/* Black contact section */
+.contact-section {
+  background: #1c1c1c;
+  color: #eee;
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 80px;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* Mobile fix */
+@media (max-width: 900px) {
+  #reviews .reviews-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
 
 
 
